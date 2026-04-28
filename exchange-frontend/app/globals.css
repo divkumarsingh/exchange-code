@@ -24,3 +24,30 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@theme {
+  /* Font Sizes */
+  --font-size-xs: 0.7rem;
+  --font-size-sm: 0.8rem;
+
+  /* * Colors 
+   */
+  --color-greenBackgroundTransparent: rgba(0, 194, 120, 0.12);
+  --color-redBackgroundTransparent: rgba(234, 56, 59, 0.12);
+  --color-baseBackgroundL2: rgb(32, 33, 39);
+  --color-baseBackgroundL3: rgb(32, 33, 39);
+  --color-greenPrimaryButtonBackground: rgb(0, 194, 120);
+  
+  --color-redBorder: rgba(234, 56, 59, 0.5);
+  --color-greenBorder: rgba(0, 194, 120, 0.4);
+  --color-baseBorderMed: #cccccc;
+  --color-accentBlue: rgb(76, 148, 255);
+  --color-baseBorderLight: rgb(32, 33, 39);
+  --color-baseTextHighEmphasis: rgb(244, 244, 246);
+  
+  --color-greenPrimaryButtonText: rgb(20, 21, 27);
+
+  /* Background Images */
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --background-image-gradient-conic: conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops));
+}
