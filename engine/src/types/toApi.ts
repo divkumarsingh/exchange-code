@@ -1,3 +1,4 @@
+import type { Order } from "../trade/Orderbook";
 
 
 export const CREATE_ORDER = "CREATE_ORDER";
@@ -9,8 +10,8 @@ export const GET_DEPTH = "GET_DEPTH";
 export type MessageToApi = {
     type: "DEPTH",
     payload: {
-        bids: [string, string],
-        asks: [string, string]
+        bids: [string, string][],
+        asks: [string, string][]
     }
 } | {
     type: "ORDER_PLACED",

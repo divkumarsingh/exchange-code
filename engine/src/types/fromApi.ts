@@ -18,7 +18,7 @@ export type MessageFromApi = {
     type: typeof CANCEL_ORDER,
     data: {
         orderId: string,
-        userId: string
+        market: string
     }
 } | {
     type: typeof ON_RAMP
