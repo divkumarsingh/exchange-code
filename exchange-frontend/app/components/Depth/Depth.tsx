@@ -1,3 +1,6 @@
+"use-client"
+
+
 import { getDepth, getTicker } from "@/app/utils/httpClient";
 import { useEffect, useState } from "react";
 import { AskTable } from "./AskTable";
@@ -10,10 +13,7 @@ export function Depth({market}: {market: string}) {
     const [price, setPrice] = useState<(string)>();
 
     useEffect(() => {
-        getDepth(market).then(d => {
-            setBids(d.bids.reverse());
-            setAsks(d.asks);
-        })
+        signalingManager
 
         getTicker(market).then(t => setPrice(t.lastPrice))
     }, [])

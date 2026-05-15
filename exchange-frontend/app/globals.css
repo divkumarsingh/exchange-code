@@ -50,4 +50,7 @@ body {
   /* Background Images */
   --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
   --background-image-gradient-conic: conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops));
+
+  --color-primary-red:  rgb(210,48,47);
+  --color-primary-white: rgb(254,254,255);
 }
